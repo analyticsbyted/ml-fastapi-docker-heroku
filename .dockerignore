@@ -17,7 +17,11 @@ coverage.xml
 *.log
 .git
 .gitignore
+.gitattributes
 .mypy_cache
 .pytest_cache
 .hypothesis
 .idea
+mlvenv/
+mlvenv
+
