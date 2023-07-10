@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detector - Results</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .btn-container button {
+            padding: 8px 16px;
+            margin: 0 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Language Detector</h1>
+        <p>
+            You entered the following text:
+        </p>
+        <p>
+            <strong>{{ user_input }}</strong>
+        </p>
+        <p>
+            The predicted language is:
+        </p>
+        <p>
+            <strong>{{ predicted_language }}</strong>
+        </p>
+        <div class="btn-container">
+            <button onclick="window.location.href='/'">Start Over</button>
+            <button onclick="window.location.href='/thankyou'">Exit</button>
+        </div>
+    </div>
+</body>
+</html>

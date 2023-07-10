@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detector</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Language Detector</h1>
+        <p>
+            This ML application detects the language of the given text.
+            Enter your text in the input box below, and click the "Detect" button to find out the language.
+        </p>
+        <p>Example: If you enter "Bonjour," it will detect the language as French.</p>
+        <form action="/" method="post">
+            <input type="text" name="text" placeholder="Enter your text" required>
+            <input type="submit" value="Detect">
+        </form>
+    </div>
+</body>
+</html>
